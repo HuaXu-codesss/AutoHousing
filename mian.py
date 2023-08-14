@@ -17,3 +17,4 @@ while True:
     # 查看响应内容，response.text 返回的是Unicode格式的数据
     print("--------返回信息如下--------\n", response.text)
     print("\n")
+    time.sleep(100)
