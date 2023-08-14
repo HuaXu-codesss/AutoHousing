@@ -5,15 +5,15 @@ url = "http://gmis.xjtu.edu.cn/pyxx/pygl/pkjlcx/listpk?sEcho=1&iColumns=11&sColu
 header = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
             "Cookie":"JSESSIONID=50D430C753AF18DBE5F98C47276DA93D.pyxx_server5.pyxx_server5; _ga=GA1.3.1453050705.1691551101"}
 
-while True:
-    print(time.strftime('%b %d %Y %H:%M:%S', time.gmtime(time.time())))
-    response = requests.get(url, headers = header)
-    # 查看响应状态码
-    print (response.status_code)
-    # 查看响应头部字符编码
-    print (response.encoding)
-    # 查看完整url地址
-    # print (response.url)
-    # 查看响应内容，response.text 返回的是Unicode格式的数据
-    print("--------返回信息如下--------\n", response.text)
-    print("\n")
+
+print(time.strftime('%b %d %Y %H:%M:%S', time.gmtime(time.time())))
+response = requests.get(url, headers = header)
+# 查看响应状态码
+print (response.status_code)
+# 查看响应头部字符编码
+print (response.encoding)
+# 查看完整url地址
+# print (response.url)
+# 查看响应内容，response.text 返回的是Unicode格式的数据
+print("--------返回信息如下--------\n", response.text)
+print("\n")
